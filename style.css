@@ -1,0 +1,411 @@
+
+* {
+    --webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 63%;
+    --webkit-text-size-adjust: 100%;
+}
+
+body {
+    height: 100%;
+    position: relative;
+}
+
+img {
+    border: 0;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(173, 126, 220, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler-icon {
+    font-size: 1.5rem;
+}
+
+header .headerText {
+    z-index: 1;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.logo {
+    text-align: center;
+    padding: 30px 15px;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    font-weight: 300;
+    background-color:rgb(174, 109, 239);
+    color: white;
+    width: 100%;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.navHeader {
+    background-color:rgb(174, 109, 239);
+}
+
+.navBody { 
+    background-color:rgba(173, 126, 220, 1);
+}
+
+.navBody a{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    display: block;
+    letter-spacing: 1px;
+    padding: 30px 15px;
+    transition: all 0.3s ease-in;
+}
+
+nav {
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    position: fixed;
+    display: block;
+}
+
+header, section {
+    height: 100vh !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+header .headerText h1::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(224, 194, 254);
+    -webkit-box-shadow: 0 0 8px rgb(224, 194, 254);
+    box-shadow: 0 0 8px rgb(224, 194, 254);
+    height: 15px;
+    left: 8px;
+    bottom: 0;
+    width: 75%;
+    z-index: -1;
+}
+
+header .headerImage {
+    width: 80%;
+    max-width: 230px;
+    
+}
+
+header .scrollDown {
+    position: absolute;
+    text-align: center;
+    padding-top: 90vh;
+    /*font-family: "Nanum Pen Script", "cursive";*/
+    font-size: 23px;
+    color: rgba(173, 126, 220, 1);
+    z-index: -11;
+}
+
+header .headerText h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 10px 0;
+    color: rgba(173, 126, 220, 1);
+    position: relative;
+    max-width: 200px;
+    width: 80%;
+}
+
+header p {
+    color: #696969;
+    font-size: 2rem;
+    font-weight: 400;
+    width: 100%;
+    position: relative;
+}
+
+header .headerText h1 span {
+    display: block;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+section {
+    padding: 80px 0;
+    display: block;
+    font-size: 1.8rem;
+    color: #696969;
+}
+
+
+.aboutMe, .skillsSection, .projectsSection, .contactSection {
+    min-height: 500px;
+    height: 80%;
+    padding: 30px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+
+.aboutMe .aboutMeTop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.aboutMe .aboutMeTop .aboutMeBio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.aboutMe .aboutMeTop .aboutMeImage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.aboutMe h2, .skillsSection h2, .projectsSection h2, .contactSection h2 {
+    font-size: 3rem;
+    color: rgba(173, 126, 220, 1);
+    position: relative;
+    margin: 0;
+}
+
+.aboutMe .aboutMeTop .aboutMeBio p {
+    font-size: 1.8rem;
+    color: #696969;
+}
+
+.aboutMe .aboutMeTop .aboutMeImage img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+p {
+    line-height: 1.6;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.skillsSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 200px auto 80px auto;
+    padding: 80px 0;
+}
+
+.skillsSection li {
+    list-style: none;
+    width: 80px;
+    text-align: center;
+    padding: 20px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+.skillsSection li img {
+    width: 40px;
+    margin-bottom: 5px;
+}
+
+.contactSection .contactForm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contactSection .contactForm label {
+    font-size: medium;
+    font-weight: bold;
+}
+
+.contactSection .contactForm input,
+.contactSection .contactForm textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid rgba(173, 126, 220, 1);
+    border-radius: 5px;
+    resize: none;
+    width: 100%;
+}
+
+.contactSection .contactForm textarea {
+    height: 200px;
+}
+
+.contactSection .contactForm button {
+    background-color: rgba(173, 126, 220, 1);
+    border: 2px solid rgba(173, 126, 220, 1);
+    padding: 10px 15px;
+    margin: 10px 0;
+    width: auto;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.contactSection .contactForm button:hover {
+    background-color: white;
+    color: rgba(173, 126, 220, 1);
+    border: 2px solid rgb(214, 181, 248);
+}
+
+@media (min-width: 780px){
+    header {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        height: 85vh;
+       
+    }
+    header p {
+        width: 80%;
+    }
+    header .headerText h1::after {
+        height: 23px;
+    }
+    header .headerText h1 span {
+        display: inline;
+    }
+    header .headerText h1 {
+        font-size: 4rem;
+        max-width: 400px;
+    }
+    .aboutMe .aboutMeTop {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+    .aboutMe .aboutMeTop .aboutMeImage {
+        
+        width: 120%;
+    }
+
+    .aboutMeTop {
+       margin-top: 5%; 
+       align-content: center;
+    }
+
+    .aboutMeBio {
+        margin-top: 10%;
+        margin-left: 5%;
+        text-align: center;
+    }
+
+    .aboutSection .sectionHead {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+    .aboutContainer{
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+
+  
+    .skillsSection li {
+        margin: 0 20px;
+        width: 120px;
+        float: left;
+    }
+    .skillsSection li img {
+        width: 50px;
+        height: 40px;
+    }
+    .contactSection .contactForm {
+        
+        width: 100%;
+        margin-top: 50px;
+    }
+}
